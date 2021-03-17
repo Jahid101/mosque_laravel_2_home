@@ -33,6 +33,13 @@
           </li> --}}
 
             <li class="nav-item shadow-lg">
+                <a class="nav-link" href={{ Route('mahfil') }}>
+                    <span data-feather="bar-chart-2"></span>
+                    <button class="btn btn-success">Mahfil</button>
+                </a>
+            </li>
+
+            <li class="nav-item shadow-lg">
                 <a class="nav-link" href={{ Route('about') }}>
                     <span data-feather="layers"></span>
                     <button class="btn btn-success">About</button>
@@ -74,12 +81,6 @@
                         </a>
                     </li>
 
-                    <li class="nav-item shadow-lg">
-                        <a class="nav-link" href={{ Route('mahfil') }}>
-                            <span data-feather="bar-chart-2"></span>
-                            <button class="btn btn-success">Mahfil</button>
-                        </a>
-                    </li>
                 </ul>
             </div>
 
