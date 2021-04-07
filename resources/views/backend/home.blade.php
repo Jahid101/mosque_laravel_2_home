@@ -51,4 +51,8 @@
 
 </body>
 
+<footer class="text-center mb-3">
+    <small> <strong> © 2021 Md Jahid Hasan Anik, All Rights Reserved</strong></small>
+</footer>
+
 </html>

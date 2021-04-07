@@ -5,7 +5,7 @@
 </style>
 
 <nav id="sidebarMenu" class="col-md-3 col-lg-2 d-md-block sidebar collapse">
-    <div class="position-sticky pt-3 bg-success mt-3 mb-5 abcd rounded">
+    <div class="position-sticky pt-3 bg-success mt-3 mb-5 rounded">
         <ul class="nav flex-column">
             <li class="nav-item shadow-lg">
                 <a class="nav-link active" aria-current="page" href={{ Route('admin') }}>
@@ -84,6 +84,12 @@
                         <a class="nav-link" href={{ Route('food') }}>
                             <span data-feather="bar-chart-2"></span>
                             <button class="btn btn-success">Food</button>
+                        </a>
+                    </li>
+                    <li class="nav-item shadow-lg">
+                        <a class="nav-link" href={{ Route('commiteeMember') }}>
+                            <span data-feather="bar-chart-2"></span>
+                            <button class="btn btn-success">Committee Member</button>
                         </a>
                     </li>
 
