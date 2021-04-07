@@ -48,3 +48,5 @@ Route::get('/mahfil',[MahfilController::class,'mahfil'])->name('mahfil');
 Route::post('/donation',[DonateController::class,'list'])->name('donate.list');
 
 Route::get('/commiteeMember',[CommiteeMemberController::class,'commiteeMember'])->name('commiteeMember');
+
+Route::post('/createEvent',[EventController::class,'eventList'])->name('create.event');

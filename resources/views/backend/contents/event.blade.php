@@ -3,17 +3,52 @@
 @section('content')
 
 
+<!-- Button trigger modal -->
+<a style="margin-left: 90%" href="#">
+    <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+        Add Event
+    </button>
+</a>
 
-    <!-- Button trigger modal -->
-    <a style="margin-left: 90%" href="#">
-        <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
-            Add Event
-        </button>
-    </a>
+
+
+<table class="table table-light table-striped mt-5">
+    <thead>
+        <tr>
+            <th scope="col">Id</th>
+            <th scope="col">Event Name</th>
+            <th style="width: 30%" scope="col">Event Details</th>
+            <th scope="col">Event Date</th>
+            <th scope="col">Event Time</th>
+            <th scope="col">Event Budget</th>
+            <th scope="col">Event Venue</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach ($eventList as $key=> $data)
+
+            <tr>
+                <th scope="row">{{$key+1}}</th>
+                <td>{{$data->name}}</td>
+                <td>{{$data->eventDetails}}</td>
+                <td>{{$data->eventDate}}</td>
+                <td>{{$data->eventTime}}</td>
+                <td>{{$data->eventBudget}}</td>
+                <td>{{$data->venue}}</td>
+            </tr>
+
+        @endforeach
+    </tbody>
+
+</table>
+
+
+
+
 
 
     {{-- Modal --}}
-    <form method="post" action="">
+    <form method="post" action="{{route('create.event')}}">
         @csrf
         <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
             aria-labelledby="staticBackdropLabel" aria-hidden="true">
@@ -44,6 +79,11 @@
                         <div class="mb-3">
                             <label for="exampleInputEmail1" class="form-label">Budget</label>
                             <input name="eventBudget" placeholder="Budget amount" type="number" class="form-control"
+                                id="exampleInputEmail1" aria-describedby="emailHelp" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleInputEmail1" class="form-label">Venue</label>
+                            <input name="venue" placeholder="venue" type="text" class="form-control"
                                 id="exampleInputEmail1" aria-describedby="emailHelp" required>
                         </div>
                     </div>

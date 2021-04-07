@@ -22,10 +22,10 @@
             </tr>
         </thead>
         <tbody>
-            @foreach ($donates as $data)
+            @foreach ($donates as $key=> $data)
 
                 <tr>
-                    <th scope="row">1</th>
+                    <th scope="row">{{$key+1}}</th>
                     <td>{{$data->name}}</td>
                     <td>{{$data->donationAmount}}</td>
                 </tr>
