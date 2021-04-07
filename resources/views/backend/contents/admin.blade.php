@@ -5,7 +5,7 @@
     <div>
     <!-- Button trigger modal -->
         <a style="margin-left: 90%" href="#">
-            <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
                 Login
             </button>
         </a>

@@ -5,7 +5,7 @@
 
 <!-- Button trigger modal -->
 <a style="margin-left: 90%" href="#">
-    <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
         Add Event
     </button>
 </a>
@@ -22,6 +22,7 @@
             <th scope="col">Event Time</th>
             <th scope="col">Event Budget</th>
             <th scope="col">Event Venue</th>
+            <th style="width: 23%" scope="col">Action</th>
         </tr>
     </thead>
     <tbody>
@@ -35,6 +36,11 @@
                 <td>{{$data->eventTime}}</td>
                 <td>{{$data->eventBudget}}</td>
                 <td>{{$data->venue}}</td>
+                <td>
+                    <a class="btn btn-secondary"href="">View</a>
+                    <a class="btn btn-success"href="">Update</a>
+                    <a class="btn btn-danger"href="">Delete</a>
+                </td>
             </tr>
 
         @endforeach
