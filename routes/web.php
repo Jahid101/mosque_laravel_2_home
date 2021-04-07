@@ -27,11 +27,18 @@ Route::get('/home',[HomeController::class,'home'])->name('home');
 
 Route::get('/about',[AboutController::class,'about'])->name('about');
 
+
 Route::get('/donate',[DonateController::class,'donate'])->name('donate');
+Route::post('/donation',[DonateController::class,'list'])->name('donate.list');
+
 
 Route::get('/announcement',[AnnouncementController::class,'announcement'])->name('announcement');
+Route::post('/createAnnouncement',[AnnouncementController::class,'announcementList'])->name('create.announcement');
+
 
 Route::get('/event',[EventController::class,'event'])->name('event');
+Route::post('/createEvent',[EventController::class,'eventList'])->name('create.event');
+
 
 Route::get('/food',[FoodController::class,'food'])->name('food');
 
@@ -45,8 +52,7 @@ Route::get('/maktab',[MaktabController::class,'maktab'])->name('maktab');
 
 Route::get('/mahfil',[MahfilController::class,'mahfil'])->name('mahfil');
 
-Route::post('/donation',[DonateController::class,'list'])->name('donate.list');
 
 Route::get('/commiteeMember',[CommiteeMemberController::class,'commiteeMember'])->name('commiteeMember');
 
-Route::post('/createEvent',[EventController::class,'eventList'])->name('create.event');
+
