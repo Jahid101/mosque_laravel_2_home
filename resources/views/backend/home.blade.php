@@ -51,8 +51,8 @@
 
 </body>
 
-<footer class="text-center mb-3">
+{{-- <footer class="text-center mb-3 mt-5">
     <small> <strong> © 2021 Md Jahid Hasan Anik, All Rights Reserved</strong></small>
-</footer>
+</footer> --}}
 
 </html>

@@ -26,4 +26,35 @@ class EventController extends Controller
         ]);
         return redirect()->back();
     }
+
+
+    public function eventUpdate($id)
+    {
+        $eventList = Event::find($id);
+        return view('backend.contents.eventUpdate', compact('eventList'));
+    }
+
+
+
+    public function eventSaveUpdate(Request $request)
+    {
+        $eventList = Event::find($request->id);
+        $eventList->name = $request->name;
+        $eventList->eventDetails = $request->eventDetails;
+        $eventList->eventDate = $request->eventDate;
+        $eventList->eventTime = $request->eventTime;
+        $eventList->eventBudget = $request->eventBudget;
+        $eventList->venue = $request->venue;
+        $eventList->save();
+        return redirect()->route('event');
+    }
+
+
+
+    public function eventDelete($id)
+    {
+        $eventList = Event::find($id);
+        $eventList->delete();
+        return redirect()->back();
+    }
 }

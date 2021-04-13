@@ -1,7 +1,8 @@
 <style>
-    .abcd{
+    .abcd {
         box-shadow: 1px 1px 40px 10px tomato;
     }
+
 </style>
 
 <nav id="sidebarMenu" class="col-md-3 col-lg-2 d-md-block sidebar collapse">
@@ -25,23 +26,31 @@
                     <button class="btn btn-success">Events</button>
                 </a>
             </li>
-            <li class="nav-item shadow-lg">
+            {{-- <li class="nav-item shadow-lg">
                 <a class="nav-link" href={{ Route('announcement') }}>
                     <span data-feather="shopping-cart"></span>
                     <button class="btn btn-success">Announcement</button>
                 </a>
-            </li>
-            {{-- <li class="nav-item">
-            <a class="nav-link" href=>
-              <span data-feather="users"></span>
-              <button class="btn w-50 btn-success">Committee Member</button>
-            </a>
-          </li> --}}
+            </li> --}}
 
             <li class="nav-item shadow-lg">
                 <a class="nav-link" href={{ Route('mahfil') }}>
                     <span data-feather="bar-chart-2"></span>
                     <button class="btn btn-success">Mahfil</button>
+                </a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link shadow-lg" href={{ Route('fund') }}>
+                    <span data-feather="bar-chart-2"></span>
+                    <button class="btn btn-success">Fund</button>
+                </a>
+            </li>
+
+            <li class="nav-item shadow-lg">
+                <a class="nav-link" href={{ Route('commiteeMember') }}>
+                    <span data-feather="bar-chart-2"></span>
+                    <button class="btn btn-success">Committee Member</button>
                 </a>
             </li>
 
@@ -52,49 +61,51 @@
                 </a>
             </li>
 
-            <div class="btn-group dropend">
+
+
+            {{-- <div class="btn-group dropend">
                 <button type="button" class="btn btn-dark dropdown-toggle" data-bs-toggle="dropdown"
                     aria-expanded="false">
                     Others
                 </button>
 
-                <ul class="dropdown-menu bg-success">
-                    <li class="nav-item">
+                <ul class="dropdown-menu bg-success"> --}}
+                    {{-- <li class="nav-item">
                         <a class="nav-link shadow-lg" href={{ Route('fund') }}>
                             <span data-feather="bar-chart-2"></span>
                             <button class="btn btn-success">Fund</button>
                         </a>
-                    </li>
+                    </li> --}}
 
-                    <li class="nav-item shadow-lg">
+                    {{-- <li class="nav-item shadow-lg">
                         <a class="nav-link" href={{ Route('tablighi') }}>
                             <span data-feather="bar-chart-2"></span>
                             <button class="btn btn-success">Tablighi</button>
                         </a>
-                    </li>
+                    </li> --}}
 
-                    <li class="nav-item shadow-lg">
+                    {{-- <li class="nav-item shadow-lg">
                         <a class="nav-link" href={{ Route('maktab') }}>
                             <span data-feather="bar-chart-2"></span>
                             <button class="btn btn-success">Maktab</button>
                         </a>
-                    </li>
+                    </li> --}}
 
-                    <li class="nav-item shadow-lg">
+                    {{-- <li class="nav-item shadow-lg">
                         <a class="nav-link" href={{ Route('food') }}>
                             <span data-feather="bar-chart-2"></span>
                             <button class="btn btn-success">Food</button>
                         </a>
-                    </li>
-                    <li class="nav-item shadow-lg">
+                    </li> --}}
+                    {{-- <li class="nav-item shadow-lg">
                         <a class="nav-link" href={{ Route('commiteeMember') }}>
                             <span data-feather="bar-chart-2"></span>
                             <button class="btn btn-success">Committee Member</button>
                         </a>
-                    </li>
+                    </li> --}}
 
-                </ul>
-            </div>
+                {{-- </ul>
+            </div> --}}
 
         </ul>
     </div>

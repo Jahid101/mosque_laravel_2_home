@@ -1,42 +1,58 @@
+<style>
+    .abcde {
+        display: flex;
+        float: left;
+    }
+
+</style>
+
 @extends('backend.home')
 
 @section('content')
 
-<div class="container pt-3">
-    <div class="row ">
-        <div class="col-md-3 ">
-            <div class="card bg-success text-white shadow" style="width: 15rem;height:10rem;">
-                <div class="card-body">
-                    <h5> <small>Total Product Quantity</small></h5>
-                    <h1>5000</h1>
-                </div>
+    <div style="margin-left: 300px">
+        <img class="w-50 ml-3" src="https://cdn.iconscout.com/icon/free/png-512/arab-man-1720811-1467061.png" alt="">
+        <h3>President of ABC Mosque</h3>
+    </div>
+
+    <br>
+    <h2 class="text-center mt-5 mb-5">Commitee Member of ABC Mosque</h2>
+    <br>
+
+    <div>
+        <div class="abcde mt-5 mb-5">
+            <div style="margin-left: 150px">
+                <img class="w-50" src="https://cdn.iconscout.com/icon/free/png-512/arab-man-1720811-1467061.png" alt="">
+                <h3>abc</h3>
+            </div>
+            <div style="margin-left: 30px">
+                <img class="w-50" src="https://cdn.iconscout.com/icon/free/png-512/arab-man-1720811-1467061.png" alt="">
+                <h3>abc</h3>
+            </div>
+
+
+            <div style="margin-left: 30px">
+                <img class="w-50" src="https://cdn.iconscout.com/icon/free/png-512/arab-man-1720811-1467061.png" alt="">
+                <h3>abc</h3>
             </div>
         </div>
-        <div class="col-md-3 ">
-            <div class="card bg-warning text-white shadow" style="width: 15rem; height:10rem">
-                <div class="card-body">
-                    <h5> <small>Total selling Product </small> </h5>
-                    <h1>1000</h1>
-                </div>
+        <br>
+        <div class="abcde mt-5 mb-5">
+            <div style="margin-left: 150px">
+                <img class="w-50" src="https://cdn.iconscout.com/icon/free/png-512/arab-man-1720811-1467061.png" alt="">
+                <h3>abc</h3>
             </div>
-        </div>
-        <div class="col-md-3 ">
-            <div class="card bg-primary text-white shadow" style="width: 15rem;height:10rem;">
-                <div class="card-body">
-                    <h5> <small>Total Price Amount</small> </h5>
-                    <h1>15000Tk</h1>
-                </div>
+            <div style="margin-left: 30px">
+                <img class="w-50" src="https://cdn.iconscout.com/icon/free/png-512/arab-man-1720811-1467061.png" alt="">
+                <h3>abc</h3>
             </div>
-        </div>
-        <div class="col-md-3 ">
-            <div class="card bg-secondary text-white shadow" style="width: 15rem;height:10rem;">
-                <div class="card-body">
-                    <h5> <small>Total Active Employee</small> </h5>
-                    <h1>200</h1>
-                </div>
+
+
+            <div style="margin-left: 30px">
+                <img class="w-50" src="https://cdn.iconscout.com/icon/free/png-512/arab-man-1720811-1467061.png" alt="">
+                <h3>abc</h3>
             </div>
         </div>
     </div>
-</div>
 
 @endsection

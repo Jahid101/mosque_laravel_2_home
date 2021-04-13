@@ -34,10 +34,15 @@ Route::post('/donation',[DonateController::class,'list'])->name('donate.list');
 
 Route::get('/announcement',[AnnouncementController::class,'announcement'])->name('announcement');
 Route::post('/createAnnouncement',[AnnouncementController::class,'announcementList'])->name('create.announcement');
+Route::get('/announcement/update/{id}', [AnnouncementController::class, 'announcementUpdate']) -> name('update.announcement');
+Route::put('/announcement/SaveUpdate/{id}', [AnnouncementController::class, 'announcementSaveUpdate']) -> name('saveUpdate.announcement');
 
 
 Route::get('/event',[EventController::class,'event'])->name('event');
 Route::post('/createEvent',[EventController::class,'eventList'])->name('create.event');
+Route::get('/event/delete/{id}', [EventController::class, 'eventDelete']) -> name('delete.event');
+Route::get('/event/update/{id}', [EventController::class, 'eventUpdate']) -> name('update.event');
+Route::put('/event/saveUpdate/{id}', [EventController::class, 'eventSaveUpdate']) -> name('saveUpdate.event');
 
 
 Route::get('/food',[FoodController::class,'food'])->name('food');
@@ -50,7 +55,9 @@ Route::get('/tablighi',[TablighiController::class,'tablighi'])->name('tablighi')
 
 Route::get('/maktab',[MaktabController::class,'maktab'])->name('maktab');
 
+
 Route::get('/mahfil',[MahfilController::class,'mahfil'])->name('mahfil');
+Route::post('/createMahfil',[MahfilController::class,'mahfilList'])->name('create.mahfil');
 
 
 Route::get('/commiteeMember',[CommiteeMemberController::class,'commiteeMember'])->name('commiteeMember');
