@@ -48,6 +48,14 @@ Route::get('/event/delete/{id}', [EventController::class, 'eventDelete']) -> nam
 
 
 
+Route::get('/mahfil',[MahfilController::class,'mahfil'])->name('mahfil');
+Route::post('/createMahfil',[MahfilController::class,'mahfilList'])->name('create.mahfil');
+Route::put('/mahfil/saveUpdate/{id}', [MahfilController::class, 'mahfilSaveUpdate']) -> name('saveUpdate.mahfil');
+Route::get('/mahfil/update/{id}', [MahfilController::class, 'mahfilUpdate']) -> name('update.mahfil');
+Route::get('/mahfil/delete/{id}', [MahfilController::class, 'mahfilDelete']) -> name('delete.mahfil');
+
+
+
 Route::get('/food',[FoodController::class,'food'])->name('food');
 
 Route::get('/fund',[FundController::class,'fund'])->name('fund');
@@ -59,8 +67,7 @@ Route::get('/tablighi',[TablighiController::class,'tablighi'])->name('tablighi')
 Route::get('/maktab',[MaktabController::class,'maktab'])->name('maktab');
 
 
-Route::get('/mahfil',[MahfilController::class,'mahfil'])->name('mahfil');
-Route::post('/createMahfil',[MahfilController::class,'mahfilList'])->name('create.mahfil');
+
 
 
 Route::get('/commiteeMember',[CommiteeMemberController::class,'commiteeMember'])->name('commiteeMember');

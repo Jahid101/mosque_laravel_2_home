@@ -38,7 +38,9 @@
                     <td>{{ $data->venue }}</td>
                     <td>
                         <a class="btn btn-secondary" href="">View</a>
+
                         <a class="btn btn-success" href="{{ route('update.event', $data['id']) }}">Update</a>
+
                         <a class="btn btn-danger" href="{{ route('delete.event', $data['id']) }}">Delete</a>
                     </td>
                 </tr>
