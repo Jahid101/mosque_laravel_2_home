@@ -30,8 +30,10 @@
                     <td>{{ $data->announcementDetails }}</td>
                     <td>
                         <a class="btn btn-secondary" href="">View</a>
-                        <a class="btn btn-success" href="{{route('update.announcement')}}">Update</a>
-                        <a class="btn btn-danger" href="">Delete</a>
+
+                        <a class="btn btn-success" href="{{route('update.announcement', $data['id'])}}">Update</a>
+
+                        <a class="btn btn-danger" href="{{route('delete.announcement', $data['id'])}}">Delete</a>
                     </td>
                 </tr>
 

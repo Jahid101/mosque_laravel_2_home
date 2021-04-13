@@ -26,12 +26,12 @@
                     <button class="btn btn-success">Events</button>
                 </a>
             </li>
-            {{-- <li class="nav-item shadow-lg">
+            <li class="nav-item shadow-lg">
                 <a class="nav-link" href={{ Route('announcement') }}>
                     <span data-feather="shopping-cart"></span>
                     <button class="btn btn-success">Announcement</button>
                 </a>
-            </li> --}}
+            </li>
 
             <li class="nav-item shadow-lg">
                 <a class="nav-link" href={{ Route('mahfil') }}>
