@@ -8,12 +8,12 @@
 <nav id="sidebarMenu" class="col-md-3 col-lg-2 d-md-block sidebar collapse">
     <div class="position-sticky pt-3 bg-success mt-3 mb-5 rounded">
         <ul class="nav flex-column">
-            <li class="nav-item shadow-lg">
+            {{-- <li class="nav-item shadow-lg">
                 <a class="nav-link active" aria-current="page" href={{ Route('admin') }}>
                     <span data-feather="home"></span>
                     <button class="btn btn-success">Admin</button>
                 </a>
-            </li>
+            </li> --}}
             <li class="nav-item shadow-lg">
                 <a class="nav-link" href={{ Route('donate') }}>
                     <span data-feather="file"></span>

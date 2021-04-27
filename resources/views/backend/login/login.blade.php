@@ -23,7 +23,7 @@
 
 
 <body class="container login-bg ">
-    {{-- @if (session()->has('success'))
+    @if (session()->has('success'))
         <div class="alert alert-success">
             {{ session()->get('success') }}
         </div>
@@ -32,7 +32,7 @@
         @foreach ($errors->all() as $error)
             <div class="alert alert-danger">{{ $error }}</div>
         @endforeach
-    @endif --}}
+    @endif
 
     <main class=" m-5 shadow loginBg">
         <div class="row ">
@@ -51,7 +51,7 @@
 
             <div class="col-md-6 col-sm-12">
                 <div class="p-5 m-5">
-                    <form action="" method="">
+                    <form action="{{route('login')}}" method="post">
                         @csrf
                         <h1 class="h3 mb-3 fw-normal"><strong>Login</strong></h1>
 
@@ -65,6 +65,11 @@
 
                         <button class="w-100 btn btn-lg btn-danger" type="submit">Login</button>
                     </form>
+                    
+                    <br/>
+                    <p class="text-center">or</p>
+
+                    <a href="{{ route('registrationForm') }}" class="w-100 btn btn-lg btn-primary">Register</a>
                 </div>
             </div>
         </div>

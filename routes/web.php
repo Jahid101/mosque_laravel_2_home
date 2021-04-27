@@ -22,7 +22,15 @@ Route::get('/home',[HomeController::class,'home'])->name('home');
 
 Route::get('/about',[AboutController::class,'about'])->name('about');
 
-Route::get('/login',[LoginController::class,'login'])->name('login');
+Route::get('/login',[LoginController::class,'loginForm'])->name('loginForm');
+
+Route::post('/login', [LoginController::class, 'login'])->name('login');
+
+Route::get('/registrationForm', [LoginController::class, 'showRegistrationForm'])->name('registrationForm');
+Route::post('/registration/create', [LoginController::class, 'registration'])->name('registration');
+
+
+Route::get('/logout', [LoginController::class, 'logout'])->name('logout');
 
 
 Route::get('/donate',[DonateController::class,'donate'])->name('donate');

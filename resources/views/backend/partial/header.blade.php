@@ -9,12 +9,24 @@
     <h1 style="color: white" class="mx-auto"><strong>ABC Mosque</strong></h1>
 
     <ul class="navbar-nav px-3">
-        <li class="nav-item text-nowrap">
+        {{-- <li class="nav-item text-nowrap">
 
     <!-- Button trigger modal -->
-            <a class="nav-link active" href="{{route('login')}}">
+            <a class="nav-link active" href="{{route('loginForm')}}">
                 <button class="btn btn-danger shadow-lg">Login</button>
             </a>
+        </li> --}}
+        <li class="nav-item text-nowrap">
+            @auth()
+
+                    <span style="color:white; margin-right: 30px; ">{{ auth()->user()->name }} </span>
+
+                <a class="btn btn-danger" href="{{ route('logout') }}"> Logout</a>
+
+            @else
+                <a class="btn btn-danger" href="{{ route('loginForm') }}">Login</a>
+
+            @endauth
         </li>
     </ul>
 </header>
