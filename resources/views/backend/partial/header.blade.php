@@ -8,11 +8,13 @@
     <button class="btn btn-dark">Search</button> --}}
     <h1 style="color: white" class="mx-auto"><strong>ABC Mosque</strong></h1>
 
-    {{-- <ul class="navbar-nav px-3">
+    <ul class="navbar-nav px-3">
         <li class="nav-item text-nowrap">
-            <a class="nav-link active" href="#">
-                <button class="btn btn-danger shadow-lg">Sign in</button>
+
+    <!-- Button trigger modal -->
+            <a class="nav-link active" href="{{route('login')}}">
+                <button class="btn btn-danger shadow-lg">Login</button>
             </a>
         </li>
-    </ul> --}}
+    </ul>
 </header>

@@ -14,15 +14,15 @@ use App\Http\Controllers\Backend\TablighiController;
 use App\Http\Controllers\Backend\MaktabController;
 use App\Http\Controllers\Backend\MahfilController;
 use App\Http\Controllers\Backend\CommiteeMemberController;
-
-
-
+use App\Http\Controllers\Backend\LoginController;
 
 Route::get('/',[HomeController::class,'home'])->name('home');
 
 Route::get('/home',[HomeController::class,'home'])->name('home');
 
 Route::get('/about',[AboutController::class,'about'])->name('about');
+
+Route::get('/login',[LoginController::class,'login'])->name('login');
 
 
 Route::get('/donate',[DonateController::class,'donate'])->name('donate');
@@ -67,3 +67,4 @@ Route::get('/maktab',[MaktabController::class,'maktab'])->name('maktab');
 
 
 Route::get('/commiteeMember',[CommiteeMemberController::class,'commiteeMember'])->name('commiteeMember');
+

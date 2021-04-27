@@ -4,11 +4,11 @@
 
     <div>
     <!-- Button trigger modal -->
-        <a style="margin-left: 90%" href="#">
+        {{-- <a style="margin-left: 90%" href="#">
             <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
                 Login
             </button>
-        </a>
+        </a> --}}
         <div style="margin-left: 300px">
             <h3>President of ABC Mosque</h3>
             <img class="w-50 ml-3" src="https://cdn.iconscout.com/icon/free/png-512/arab-man-1720811-1467061.png" alt="">
@@ -24,10 +24,6 @@
             aria-labelledby="staticBackdropLabel" aria-hidden="true">
             <div class="modal-dialog">
                 <div class="modal-content">
-                    {{-- <div class="modal-header">
-                        <h5 class="modal-title" id="staticBackdropLabel">Modal title</h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div> --}}
                     <div class="modal-body">
 
                         <div class="mb-3">

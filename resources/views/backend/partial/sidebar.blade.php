@@ -50,7 +50,7 @@
             <li class="nav-item shadow-lg">
                 <a class="nav-link" href={{ Route('commiteeMember') }}>
                     <span data-feather="bar-chart-2"></span>
-                    <button class="btn btn-success">Committee Member</button>
+                    <button class="btn btn-success">Committee<br/>Member</button>
                 </a>
             </li>
 
