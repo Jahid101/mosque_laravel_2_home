@@ -16,9 +16,6 @@ use App\Http\Controllers\Backend\MahfilController;
 use App\Http\Controllers\Backend\CommiteeMemberController;
 
 
-// Route::get('/home', function () {
-//     return view('backend.home');
-// });
 
 
 Route::get('/',[HomeController::class,'home'])->name('home');
@@ -69,6 +66,4 @@ Route::get('/maktab',[MaktabController::class,'maktab'])->name('maktab');
 
 
 
-
 Route::get('/commiteeMember',[CommiteeMemberController::class,'commiteeMember'])->name('commiteeMember');
-
