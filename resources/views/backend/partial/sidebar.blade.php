@@ -1,11 +1,11 @@
 <style>
     .abcd {
-        box-shadow: 1px 1px 40px 10px tomato;
+        position: fixed;
     }
 
 </style>
 
-<nav id="sidebarMenu" class="col-md-3 col-lg-2 d-md-block sidebar collapse">
+<nav id="sidebarMenu" class="col-md-3 abcd col-lg-2 d-md-block sidebar collapse">
     <div class="position-sticky pt-3 bg-success mt-3 mb-5 rounded">
         <ul class="nav flex-column">
             {{-- <li class="nav-item shadow-lg">
@@ -57,7 +57,7 @@
             <li class="nav-item shadow-lg">
                 <a class="nav-link" href={{ Route('about') }}>
                     <span data-feather="layers"></span>
-                    <button class="btn btn-success">About</button>
+                    <button class="btn btn-success">Contact us</button>
                 </a>
             </li>
 
