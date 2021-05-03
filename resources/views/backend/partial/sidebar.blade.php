@@ -40,12 +40,14 @@
                 </a>
             </li>
 
+            @if (auth()->user())
             <li class="nav-item">
                 <a class="nav-link shadow-lg" href={{ Route('fund') }}>
                     <span data-feather="bar-chart-2"></span>
                     <button class="btn btn-success">Fund</button>
                 </a>
             </li>
+            @endif
 
             <li class="nav-item shadow-lg">
                 <a class="nav-link" href={{ Route('commiteeMember') }}>
@@ -110,3 +112,4 @@
         </ul>
     </div>
 </nav>
+{{-- @dd(auth()->user()) --}}

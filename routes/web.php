@@ -16,9 +16,16 @@ use App\Http\Controllers\Backend\MahfilController;
 use App\Http\Controllers\Backend\CommiteeMemberController;
 use App\Http\Controllers\Backend\LoginController;
 
+
+Route::group(['middleware' => 'admin-auth'], function () {
+
+    Route::get('/fund',[FundController::class,'fund'])->name('fund');
+});
+
+
 Route::get('/',[HomeController::class,'home'])->name('home');
 
-Route::get('/home',[HomeController::class,'home'])->name('home');
+// Route::get('/home',[HomeController::class,'home'])->name('home');
 
 Route::get('/about',[AboutController::class,'about'])->name('about');
 
@@ -62,8 +69,6 @@ Route::get('/mahfil/delete/{id}', [MahfilController::class, 'mahfilDelete']) -> 
 
 
 Route::get('/food',[FoodController::class,'food'])->name('food');
-
-Route::get('/fund',[FundController::class,'fund'])->name('fund');
 
 Route::get('/admin',[AdminController::class,'admin'])->name('admin');
 
